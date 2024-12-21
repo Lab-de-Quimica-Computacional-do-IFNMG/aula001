@@ -1,24 +1,34 @@
-# aula001
-Introdução a dkit
-#código
+# aula001 
+# Introdução a rdkit plotando estruturas em 2D.
+
+# Importando as bibliotecas
+```python
 from rdkit import Chem
 from rdkit.Chem import Draw
-from rdkit.Chem import Descriptors, Crippen, Lipinski  
+```
 
-#definir nosso smiles
+# definir nosso smiles
+```python
 smiles = ''
+```
 
 
-#import da biblioteca
+# atribuir função
+```python
 mol = Chem.MolFromSmiles(smiles)
+```
 
-#pedir o desenho 
+# gerar desenho em 2D 
+```python
 img = Draw.MolToImage(mol)
-
 display(img)
+```
 
+## Atividade: 
+Passar todos para a forma de smiles em seguida gerar todas as estruturas em 2D 
 Lista de Compostos Orgânicos para o Exercício:
-passar todos para a forma de smiles em seguida gerar todas as estruturas em 2D  
+
+
 
 Metano (CH₄)
 Etano (C₂H₆)
